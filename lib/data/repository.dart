@@ -8,8 +8,6 @@ class Repository {
       Dio(BaseOptions(baseUrl: 'https://apiv2.allsportsapi.com/football/'));
   final String apiKey =
       '273261390740d5254a31cfa918ff4ffcfdb4398bdb7424be989f7ce507e03322';
-  // https://apiv2.allsportsapi.com/football/?met=Countries&APIkey=273261390740d5254a31cfa918ff4ffcfdb4398bdb7424be989f7ce507e03322
-
   Future<List<Country>> fetchCountries() async {
     try {
       final response = await _dio.get(
