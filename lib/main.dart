@@ -31,7 +31,7 @@ class MyApp extends StatelessWidget {
         initialRoute: '/',
         routes: {
           '/': (context) => const HomeScreen(),
-          '/country-selection': (context) => const CountrySelectionScreen(),
+          // '/country-selection': (context) => const CountrySelectionScreen(),
           '/leagues': (context) => LeaguesScreen(
                 countryId: ModalRoute.of(context)!.settings.arguments as int,
               ),
